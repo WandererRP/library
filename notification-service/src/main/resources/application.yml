@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: notification-service
+kafka:
+  consumer:
+    bootstrap-address: kafka-broker-1:9092,kafka-broker-2:9093,kafka-broker-3:9094
+    group-id: library-group
+    auto-offset-reset: earliest
+    enable-auto-commit: false
+    max-poll-records: 10
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
