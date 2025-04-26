@@ -15,7 +15,7 @@ public class NotificationListener {
         log.info("New author event received: {}", message);
     }
 
-    @KafkaListener(topics = "author-event-topic", groupId = "library-group", containerFactory = "kafkaListenerContainerFactory")
+    @KafkaListener(topics = "book-event-topic", groupId = "library-group", containerFactory = "kafkaListenerContainerFactory")
     public void listenBookEvents(String message) {
         log.info("New book event received: {}", message);
     }
