@@ -22,3 +22,4 @@ kafka:
     batch-size: 16384
     key-serializer: org.apache.kafka.common.serialization.StringSerializer
     value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    idempotence: true

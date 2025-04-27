@@ -28,6 +28,7 @@ public class KafkaProducerConfig {
         configs.put(ProducerConfig.ACKS_CONFIG, kafkaProducerProps.getAcks());
         configs.put(ProducerConfig.LINGER_MS_CONFIG, kafkaProducerProps.getLingerMs());
         configs.put(ProducerConfig.BATCH_SIZE_CONFIG, kafkaProducerProps.getBatchSize());
+        configs.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
         return new DefaultKafkaProducerFactory<>(configs);
     }
 

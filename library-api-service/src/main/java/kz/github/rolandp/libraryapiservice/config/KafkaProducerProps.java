@@ -15,4 +15,5 @@ public class KafkaProducerProps {
     private int batchSize;
     private String keySerializer;
     private String valueSerializer;
+    private boolean idempotence;
 }
